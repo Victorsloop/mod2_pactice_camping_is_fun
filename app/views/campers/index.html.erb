@@ -1,7 +1,7 @@
-<h1>All The Campers</h1>
+<h1>These are all The Campers !!</h1>
 
 <ul>
   <% @campers.each do |camper| %>
-    <li><%= camper.name %></li>
+    <li><%= link_to camper.name, camper_path(camper) %></li>
   <% end %>
-</ul>
+</ul> 
